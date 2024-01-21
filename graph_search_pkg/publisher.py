@@ -6,6 +6,26 @@ import json
 import random
 
 class GraphPublisher(Node):
+    """
+    A class that publishes a graph with a target and obstacles.
+
+    This class initializes an empty graph and adds a target and obstacles to it.
+    It periodically publishes the graph as a JSON string to a specified topic.
+
+    Attributes:
+        publisher_: A publisher object for publishing the graph.
+        graph: A numpy array representing the graph.
+        target: A tuple representing the target location in the graph.
+        graph_json: A JSON string representation of the graph and target.
+        timer: A timer object for periodically publishing the graph.
+
+    Methods:
+        __init__: Initializes the GraphPublisher object.
+        timer_callback: Callback function for the timer to publish the graph.
+        create_path: Creates a navigable path from the start position to the target.
+        add_obstacles: Adds random obstacles to the graph.
+        print_map: Prints the graph with the target and obstacles to the terminal.
+    """
 
     def __init__(self):
         super().__init__('graph_publisher')
