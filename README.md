@@ -15,3 +15,7 @@ Considerations:
 - It is possible that our USV misses the victim in a given square of the search area, as such the algorithm needs to distinguish between checked and non-navigable areas so that USVs can recheck navigated squares
 
 - This finally is only considering the search patten algorithm, it does not account for the integration between systems
+
+Notes:
+
+- Look into Hamiltonian and Eulerian Paths
