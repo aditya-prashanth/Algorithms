@@ -1,4 +1,5 @@
 In creating this project, here is a preliminary outline of the components of the search algorithm software:
+
 Master:
 - A master program between all USVs that takes in a search area and assigns a search path to each utilized USV
 - Estimates area of untraversable terrains and marks it off of the area needing to be searched
